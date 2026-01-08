@@ -1,1 +1,0 @@
-mongodb+srv://Sricharan:onepieceisreal@cluster0.4tsftbs.mongodb.net/
