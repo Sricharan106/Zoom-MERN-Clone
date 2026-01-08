@@ -33,7 +33,7 @@ const start = async () => {
   const localUrl = "mongodb://127.0.0.1:27017/zoom";
   const altasUrl = process.env.ATLASDB_URL;
   mongoose
-    .connect(localUrl)
+    .connect(altasUrl)
     .then(() => console.log("Connection successful"))
     .catch((err) => console.error(err));
   server.listen(app.get("port"), () =>
