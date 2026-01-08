@@ -1,0 +1,52 @@
+.joinOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinBox {
+  background: #1e1e2e;
+  padding: 20px;
+  width: 320px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.joinBox h2 {
+  text-align: center;
+  color: white;
+}
+
+.joinBox input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.joinActions {
+  display: flex;
+  gap: 10px;
+}
+
+.joinActions button {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.cancel {
+  background: #444;
+  color: white;
+}
+
+.errorText {
+  color: #ff6b6b;
+  font-size: 14px;
+  text-align: center;
+}

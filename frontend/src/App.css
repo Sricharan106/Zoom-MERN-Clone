@@ -1,0 +1,157 @@
+body {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+}
+
+.landingConatainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landingNav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1c1c29;
+}
+
+.NavHeader {
+  padding: 1.2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.NavHeader > h1 > a {
+  color: #0052b5;
+  text-decoration: none;
+}
+
+.NavList {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-right: 1rem;
+}
+
+.NavButtons {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6rem 0rem 0.7rem 0rem;
+}
+
+#Navlogin {
+  background-color: #0052b5;
+  padding: 0.6rem 2rem 0.7rem 2rem;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.LandingHero {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  /* padding-top: 25vh; */
+  align-items: center;
+  height: 85vh;
+}
+
+.LandingHeroText > h2 {
+  font-size: 6rem;
+  padding-bottom: 1rem;
+}
+
+.LandingHeroText > h2 > span {
+  color: #0052b5;
+}
+
+.LandingHeroText > p {
+  font-size: 2rem;
+  color: #96a9e8;
+  padding-bottom: 1rem;
+}
+
+.LandingHeroLogo img {
+  transform: scale(1.2);
+  padding: 1rem;
+}
+
+.AuthContainer {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.AuthContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 25%;
+}
+
+.AuthContainer p a {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.AuthContainer h1 {
+  margin-bottom: 1rem;
+}
+
+.AuthContainer > :first-child {
+  text-decoration: none;
+  color: #2d8cff;
+  transform: translateX(-150px);
+  border: 2px solid #fff;
+  border-radius: 80%;
+  padding: 2px;
+}
+
+.error {
+  color: red;
+}
+
+#outlined-basic {
+  border-color: #cdd6f4;
+}
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}
+
+.homeHeroSection {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+.greeting {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1.5rem;
+  padding-inline: 2rem;
+}
