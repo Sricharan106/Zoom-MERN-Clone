@@ -16,8 +16,9 @@ import ChatIcon from "@mui/icons-material/Chat";
 import ChatPannel from "./chatPannel";
 import CloseIcon from "@mui/icons-material/Close";
 import { useLocation, useNavigate } from "react-router-dom";
+import server from "../environment";
 
-const server_url = "http://localhost:8080";
+const server_url = `${server.prod}`;
 
 var connections = {};
 
