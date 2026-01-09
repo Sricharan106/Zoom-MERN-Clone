@@ -155,3 +155,43 @@ body {
   font-size: 1.5rem;
   padding-inline: 2rem;
 }
+
+@media (max-width: 768px) {
+  .landingConatainer {
+    width: 100vw;
+    height: 90vh;
+  }
+  .LandingHero {
+    height: 45vh;
+    flex-direction: column;
+  }
+  .LandingHeroText > h2 {
+    /* display: none; */
+    font-size: 2rem;
+  }
+  .LandingHeroLogo img {
+    /* display: none; */
+    width: 20rem;
+    margin-top: 3rem;
+  }
+  .NavHeader {
+    padding: 0.8rem;
+    margin-left: 1rem;
+  }
+  .NavList {
+    gap: 0.8rem;
+    padding: 0.8rem;
+    margin-right: 0rem;
+  }
+  .NavButtons {
+    font-size: 0.7rem;
+    padding: 0.6rem 0rem 0.8rem 0rem;
+  }
+  #Navlogin {
+    padding: 0.6rem 1rem 0.6rem 1rem;
+  }
+  .AuthContainer {
+    height: 90vh;
+    min-height: 10vh;
+  }
+}

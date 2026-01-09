@@ -3,6 +3,8 @@
   height: 100vh;
   background-color: #1e1e2e;
   color: #cdd6f4;
+  /* width: 100vw;
+  max-width: 1200px; */
 }
 
 .meetUserVideo {
@@ -78,7 +80,39 @@
   word-break: break-word;
 }
 
-.lobbyContainer{
-  padding-inline: 2rem;
-  display: flex;
+.lobbyContainer {
+  margin: 12px;
+}
+
+.lobbyContainer h2 {
+  margin-bottom: 12px;
+}
+
+.lobbyContainer video {
+  border-radius: 12px;
+}
+.lobbyContainer svg {
+  color: white;
+  font-size: 2rem;
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .meetVideoContiner {
+    width: 80%;
+    height: 90vh;
+    max-width: 768px;
+  }
+  .meetUserVideo {
+    left: 0;
+    height: 20vh;
+  }
+  .chatModal {
+    width: 50vw;
+    height: 80vh;
+    right: -65px;
+  }
+  .lobbyContainer video {
+    width: 75%;
+  }
 }

@@ -41,9 +41,13 @@ function HomeComponent() {
         <div className="landingNav">
           <div className="NavHeader">
             <h1>
-              <a onClick={() => {
-                navigate("/")
-              }}>Zoom</a>
+              <a
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                Zoom
+              </a>
             </h1>
           </div>
           <div className="NavList">

@@ -18,7 +18,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useLocation, useNavigate } from "react-router-dom";
 import server from "../environment";
 
-const server_url = `${server.prod}`;
+const server_url = `${server}`;
 
 var connections = {};
 
@@ -394,12 +394,13 @@ export default function VideoMeetComponent() {
     }
   }, []);
 
-  let videoStyles = showModal ? { left: "3vh" } : { left: "80vw" };
+  let videoStyles = showModal ? { left: "3%" } : { left: "80%" };
   return (
-    <div className={styles.lobbyContainer}>
+    <div>
       {askForUsername === true ? (
-        <div>
+        <div className={styles.lobbyContainer}>
           <h2>Enter into lobby</h2>
+
           <TextField
             variant="outlined"
             label="Username"
@@ -434,11 +435,21 @@ export default function VideoMeetComponent() {
             }}
           />
 
-          <Button variant="contained" onClick={connect}>
+          <Button
+            variant="contained"
+            onClick={connect}
+            sx={{ margin: "12px", height: "3.2rem", translate: "0px -10px" }}
+          >
             Connect
           </Button>
           <div>
             <video ref={lobbyVideoRef} autoPlay muted playsInline />
+            <IconButton onClick={handleVideo} style={{ color: "#cdd6f4" }}>
+              {video === true ? <VideocamIcon /> : <VideocamOffIcon />}
+            </IconButton>
+            <IconButton onClick={handleAudio} style={{ color: "#cdd6f4" }}>
+              {audio === true ? <MicIcon /> : <MicOffIcon />}
+            </IconButton>
           </div>
         </div>
       ) : (
@@ -497,7 +508,6 @@ export default function VideoMeetComponent() {
               </Badge>
             )}
           </div>
-          <h3>videos length: {videos.length}</h3>
 
           <div
             className={styles.chatModal}
@@ -518,7 +528,7 @@ export default function VideoMeetComponent() {
           <div className={styles.meetAllVideos}>
             {videos.map((video) => (
               <div key={video.socketId}>
-                <h2>video.socketId: {video.socketId}</h2>
+                <h2>username: {username}</h2>
                 <video
                   data-socket={video.socketId}
                   ref={(ref) => {

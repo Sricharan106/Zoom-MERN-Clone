@@ -5,7 +5,6 @@ const connectToSocket = (server) => {
     cors: {
       origin: true,
       methods: ["GET", "POST"],
-      allowedHeaders: ["*"],
       credentials: true,
     }, // not for production
   });
