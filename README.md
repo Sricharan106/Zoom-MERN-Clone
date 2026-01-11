@@ -51,7 +51,7 @@ Zoom-MERN-Clone is a learning/demo project that implements a multi-user video me
 ---
 
 ## Repository structure
-
+``` bash
 backend/
 ├─ package.json
 ├─ package-lock.json
@@ -76,6 +76,7 @@ frontend/
 ├─ styles/
 ├─ assets/
 └─ environment.js # Environment helper
+```
 
 ---
 
@@ -101,7 +102,7 @@ frontend/
 ### Backend (`backend/.env`)
 
 - ATLASDB_URL=mongodb+srv://<user>:<pass>@cluster0.mongodb.net/zoom
-- PORT=<port>
+- PORT=<yourport>
 
 ## Local development — backend
 ```bash
@@ -117,7 +118,7 @@ npm install
 npm run dev
 ```
 ## Open
-- http://localhost:<port>
+- http://localhost:yourport
 
 # Make sure backend is running.
 
@@ -144,4 +145,4 @@ npm run dev
 
 ---
 
-### ❤️ Made with love by Sricharan
+## Made with ❤️ by Sricharan
